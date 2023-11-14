@@ -1,0 +1,27 @@
+<h1>Conversor de unidades de Temperatura</h1>
+
+<table style="width:100%">
+  <tr>
+    <td>Grados Fahrenheit</td>
+    <td rowspan="2">
+      <div class="contenedor-boton-operaciones">
+        <button type="button" (click)="convertir()">convertir</button>
+      </div>
+    </td>
+    <td>Grados Celsius</td>
+    <td>Grados Kelvin</td>
+  </tr>
+  <tr>
+    <td>
+      <div>
+        <input type="number" [(ngModel)]="Grados.Fahrenheit">
+      </div>
+    </td>
+    <td>
+      <div>{{Grados.Celsius}}</div>
+    </td>
+    <td>
+      <div>{{Grados.Kelvin}}</div>
+    </td>
+  </tr>
+</table>
